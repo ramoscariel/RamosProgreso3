@@ -6,9 +6,14 @@
     xmlns:local="clr-namespace:RamosProgreso3"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+
+        <ShellContent 
+            Title="Descubrir Frutas"
+            ContentTemplate="{DataTemplate local:Views.MainPage}" />
+        <ShellContent 
+    Title="Mis Frutas"
+    ContentTemplate="{DataTemplate local:Views.ARFrutasGuardadasView}" />
+    </TabBar>
 
 </Shell>
